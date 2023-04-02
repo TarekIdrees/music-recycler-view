@@ -4,14 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/recycler_view_trending"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:listitem="@layout/item_trending_right_now_card">
+    tools:listitem="@layout/item_music_card">
 
 </androidx.recyclerview.widget.RecyclerView>

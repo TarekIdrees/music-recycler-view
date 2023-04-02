@@ -13,21 +13,21 @@
         android:id="@+id/chips_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:checkedChip="@+id/chip_all_recipes"
+        app:checkedChip="@+id/chip_trending_right_now"
         app:chipSpacingHorizontal="@dimen/spacing_small"
         android:layout_marginVertical="@dimen/spacing_small"
         app:selectionRequired="true"
         app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_all_recipes"
+            android:id="@+id/chip_trending_right_now"
             style="@style/ChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/trending_right_now" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_breakfast"
+            android:id="@+id/chip_rock"
             style="@style/ChipStyle"
             android:layout_width="wrap_content"
             android:checked="false"
@@ -35,7 +35,7 @@
             android:text="@string/rock" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_desert"
+            android:id="@+id/chip_hip_hop"
             style="@style/ChipStyle"
             android:checked="false"
             android:layout_width="wrap_content"
@@ -43,20 +43,20 @@
             android:text="@string/hip_hop" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_dinner"
+            android:id="@+id/chip_old"
             style="@style/ChipStyle"
             android:layout_width="wrap_content"
             android:checked="false"
             android:layout_height="wrap_content"
-            android:text="@string/rock" />
+            android:text="@string/old" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_snack"
+            android:id="@+id/chip_classic"
             style="@style/ChipStyle"
             android:layout_width="wrap_content"
             android:checked="false"
             android:layout_height="wrap_content"
-            android:text="@string/hip_hop" />
+            android:text="@string/classic" />
 
     </com.google.android.material.chip.ChipGroup>
 

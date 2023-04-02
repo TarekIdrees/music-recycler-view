@@ -1,4 +1,4 @@
-package com.example.music_nr.ui
+package com.example.music_nr.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
