@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/search_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/item_search"
+        />
+
+    <include
+        android:id="@+id/recycler_view_trending"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        layout="@layout/trending_right_now_rv"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="8dp"
+       />
+
+    <include
+        android:id="@+id/chip_music_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/recycler_view_trending"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/item_chips"/>
+
+    <include
+        android:id="@+id/recycler_view_music_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chip_music_type"
+        layout="@layout/music_card_rv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
